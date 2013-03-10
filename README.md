@@ -22,3 +22,4 @@ Features Wishlist
 
 * Turn off toolbar items
 * Badge count for unfinished To-Do items (optional)
+* Double click on glyph name in To-Do list opens glyph
