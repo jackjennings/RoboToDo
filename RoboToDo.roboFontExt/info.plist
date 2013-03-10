@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>addToMenu</key>
+	<array>
+		<dict>
+			<key>path</key>
+			<string>font_todos.py</string>
+			<key>preferredName</key>
+			<string>Font To-Dos</string>
+			<key>shortKey</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<string>glyph_todos.py</string>
+			<key>preferredName</key>
+			<string>Glyph To-Dos</string>
+			<key>shortKey</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>developer</key>
+	<string>Jack Jennings</string>
+	<key>developerURL</key>
+	<string>http://ja.ckjennin.gs</string>
+	<key>html</key>
+	<true/>
+	<key>launchAtStartUp</key>
+	<integer>1</integer>
+	<key>mainScript</key>
+	<string>_startup.py</string>
+	<key>name</key>
+	<string>RoboToDo</string>
+	<key>requiresVersionMajor</key>
+	<string>1</string>
+	<key>requiresVersionMinor</key>
+	<string>2</string>
+	<key>timeStamp</key>
+	<real>1362938498.757504</real>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>
