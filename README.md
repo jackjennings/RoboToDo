@@ -3,6 +3,8 @@ RoboToDo
 
 A To-Do list manager for RoboFont.
 
+![robotodo preview](http://ja.ckjennin.gs/public/images/RoboToDo-preview.jpg)
+
 Installation
 ------------
 
