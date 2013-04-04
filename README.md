@@ -10,7 +10,7 @@ http://github.com/jackjennings/RoboToDo
 Installation
 ------------
 
-Double click ```RoboToDo.roboFontExt```.
+Either install RoboToDo through [Mechanic](https://github.com/jackjennings/Mechanic), or download the .zip file and double click ```RoboToDo.roboFontExt```.
 
 Known Issues
 ------------
