@@ -29,3 +29,4 @@ Features Wishlist
 * Double click on glyph name in To-Do list opens glyph
 * Sort glyphs by UC / lc
 * Archive to-do items instead of deleting them (or optionally delete)
+* Export all to-do items to .txt
