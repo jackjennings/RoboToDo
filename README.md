@@ -10,7 +10,7 @@ http://github.com/jackjennings/RoboToDo
 Installation
 ------------
 
-Double click ```RoboToDo.roboFontExt```.
+Either install RoboToDo through [Mechanic](https://github.com/jackjennings/Mechanic), or download the .zip file and double click ```RoboToDo.roboFontExt```.
 
 Known Issues
 ------------
@@ -29,3 +29,4 @@ Features Wishlist
 * Double click on glyph name in To-Do list opens glyph
 * Sort glyphs by UC / lc
 * Archive to-do items instead of deleting them (or optionally delete)
+* Export all to-do items to .txt
