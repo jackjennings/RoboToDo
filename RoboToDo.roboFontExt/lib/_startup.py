@@ -12,6 +12,11 @@ from todo.models import ToDo, Block, Resource
 from todo.views import ToDoWindow
 
 from defconAppKit.windows.baseWindow import BaseWindowController
+# TODO: Windows should not open more than one at a time,
+#       but OpenWindow doesn't seem to do this... :(
+# from mojo.roboFont import OpenWindow
+
+WINDOWS = {}
 
 class ToolBarButtons(object):
     
@@ -37,7 +42,9 @@ class ToolBarButtons(object):
                         'toolbarFontToDo.pdf', self.openFontToDos, index=-2)
     
     def addToolbar(self, window, label, identifier, filename, callback, index=-1):
-        w = window.window()
+        toolbarItems = window.getToolbarItems()
+        vanillaWindow = window.window()
+        displayMode = vanillaWindow._window.toolbar().displayMode()
         imagePath = os.path.join(self.base_path, 'resources', filename)
         image = NSImage.alloc().initByReferencingFile_(imagePath)
         
@@ -46,26 +53,23 @@ class ToolBarButtons(object):
                                    [dict(image=image, toolTip="To-Do")], 
                                    trackingMode="one")
         
-            item = dict(itemIdentifier=identifier,
+            newItem = dict(itemIdentifier=identifier,
                 label = label,
                 callback = callback,
                 view = view
             )
         else:
-            item = dict(itemIdentifier=identifier,
+            newItem = dict(itemIdentifier=identifier,
                 label=label,
                 imageObject=image,
                 callback=callback
             )
             
-        w._createToolbarItem(item)
-        w._toolbarDefaultItemIdentifiers.remove(item["itemIdentifier"])
-        w._toolbarDefaultItemIdentifiers.insert(index, item["itemIdentifier"])
-        
-        numberOfItems = w.getNSWindow().toolbar()._numberOfItems()
-        index = (numberOfItems + index) % numberOfItems
-        
-        w.getNSWindow().toolbar().insertItemWithItemIdentifier_atIndex_(item["itemIdentifier"], index)
+        toolbarItems.insert(index, newItem)
+        vanillaWindow.addToolbar(toolbarIdentifier="toolbar-%s" % identifier, 
+                                 toolbarItems=toolbarItems, 
+                                 addStandardItems=False)
+        vanillaWindow._window.toolbar().setDisplayMode_(displayMode)
 
     def openGlyphToDos(self, sender):
         window = ToDoWindow(CurrentGlyph())
