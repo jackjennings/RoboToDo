@@ -35,8 +35,13 @@
 	<string>_startup.py</string>
 	<key>name</key>
 	<string>RoboToDo</string>
-	<key>repository</key>
-	<string>jackjennings/RoboToDo</string>
+	<key>com.robofontmechanic.Mechanic</key>
+	<dict>
+		<key>repository</key>
+		<string>jackjennings/RoboToDo</string>
+		<key>summary</key>
+		<string>Embedded to-do tracker with font- and glyph-scoped to-do items</string>
+	</dict>
 	<key>timeStamp</key>
 	<real>1364306316.999585</real>
 	<key>version</key>
