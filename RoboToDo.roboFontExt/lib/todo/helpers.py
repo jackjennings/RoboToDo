@@ -3,7 +3,7 @@ from vanilla import *
 
 from mojo.UI import CurrentFontWindow
 
-from models import *
+from todo.models import *
 
 def doubleClickCallback(sender):
     pass

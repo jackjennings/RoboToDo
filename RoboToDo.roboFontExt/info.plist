@@ -43,9 +43,9 @@
 		<string>Embedded to-do tracker with font- and glyph-scoped to-do items</string>
 	</dict>
 	<key>timeStamp</key>
-	<real>1364306316.999585</real>
+	<real>1552324595.0</real>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>requiresVersionMajor</key>
 	<string>1</string>
 	<key>requiresVersionMinor</key>
